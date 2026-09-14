@@ -1,9 +1,32 @@
 /target/
+
+# Editor and backup cruft
 **/*.rs.bk
 *.bak
 *.bak.*
+*~
+
+# Build/test output that must never be committed
 build.err
 test.err
+
+# macOS
 .DS_Store
+
+# Audit: the ledger (.audit/log/writes.jsonl) IS tracked — it is the point
+# of the audit trail. Only the content-addressed object blobs are ignored.
 .audit/objects/
-.audit/log/
+
+# Fuzz artifacts
+fuzz/target/
+fuzz/corpus/
+fuzz/artifacts/
+
+# Coverage
+*.profraw
+lcov.info
+
+# TIGER data is fetched by SHA-256 via scripts/fetch-tiger.sh
+data/tiger/*.zip
+data/tiger/*.txt
+fuzz/Cargo.lock
