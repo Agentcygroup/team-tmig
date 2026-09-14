@@ -97,3 +97,7 @@ path = "src/bin/omega.rs"
 [[bin]]
 name = "content"
 path = "src/bin/content.rs"
+
+[[bin]]
+name = "xt"
+path = "src/bin/xt.rs"
