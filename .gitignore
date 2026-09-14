@@ -30,3 +30,4 @@ lcov.info
 data/tiger/*.zip
 data/tiger/*.txt
 fuzz/Cargo.lock
+!src/bin/xt.rs
