@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
-# red/15: adversarial invariant placeholder — refuses to pass by accident.
 set -euo pipefail; cd "$(dirname "$0")/../.."
-[ -f Cargo.toml ] || { echo "red/15: not in crate root"; exit 1; }
-exit 0
+if [ ! -f declarations/ai-glossary.gloss ]; then
+  echo "red/15: no GLOSS file; pass by construction"; exit 0
+fi
+cargo test --release --lib gloss:: -- --nocapture

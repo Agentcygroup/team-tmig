@@ -1,0 +1,37 @@
+[version]
+format = 1
+
+[[record]]
+kind = "term"
+required = ["id", "name", "discipline", "coverage", "note"]
+coverage_allowed = ["provided", "partial", "absent", "out-of-scope"]
+referee_scope = "any named institution whose standards cover the discipline"
+
+[[record]]
+kind = "non_claim"
+required = ["id", "statement", "rationale"]
+
+[[record]]
+kind = "referee"
+required = ["term_id", "institution", "standard", "verdict", "reason"]
+verdict_allowed = ["accept", "reject", "abstain"]
+
+[[mandatory_non_claim]]
+id = "no-mastery"
+statement = "GLOSS does not confer mastery over any discipline."
+rationale = "Mastery is a property of a mind or system producing novel correct results, not of a file format."
+
+[[mandatory_non_claim]]
+id = "no-accreditation"
+statement = "GLOSS does not confer institutional accreditation."
+rationale = "Accreditation is a human act by a named body under a named standard for a named scope."
+
+[[mandatory_non_claim]]
+id = "no-coherence-proof"
+statement = "GLOSS does not prove that its source glossary is internally coherent."
+rationale = "Grammar parses; it does not adjudicate semantic contradiction."
+
+[[mandatory_non_claim]]
+id = "no-completeness"
+statement = "GLOSS does not claim to enumerate every term of any field."
+rationale = "The set of terms is open and moves; a file is a snapshot."

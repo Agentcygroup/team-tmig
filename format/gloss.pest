@@ -1,0 +1,13 @@
+WHITESPACE = _{ " " | "\t" }
+COMMENT    = _{ "#" ~ (!"\n" ~ ANY)* }
+line       = _{ record ~ NEWLINE? }
+file       =  { SOI ~ line* ~ EOI }
+record     = _{ term | non_claim | referee }
+term       =  { "term" ~ string ~ string ~ ident ~ coverage ~ string }
+non_claim  =  { "non_claim" ~ string ~ string ~ string }
+referee    =  { "referee" ~ string ~ string ~ string ~ verdict ~ string }
+coverage   = _{ "provided" | "partial" | "absent" | "out-of-scope" }
+verdict    = _{ "accept" | "reject" | "abstain" }
+string     = ${ "\"" ~ inner ~ "\"" }
+inner      = @{ (!"\"" ~ !"\\" ~ ANY | "\\" ~ ANY)* }
+ident      = @{ (ASCII_ALPHANUMERIC | "_" | "-" | ".")+ }
