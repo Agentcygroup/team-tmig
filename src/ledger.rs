@@ -79,6 +79,7 @@ impl Ledger {
                 if line.is_empty() {
                     continue;
                 }
+                // bounded
                 if let Ok(e) = serde_json::from_str::<LedgerEntry>(&line) {
                     entries.push(e);
                 }

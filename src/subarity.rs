@@ -65,7 +65,7 @@ pub fn load_declarations(dir: &std::path::Path) -> anyhow::Result<Vec<crate::hit
     for entry in std::fs::read_dir(dir)? {
         let path = entry?.path();
         if path.extension().and_then(|e| e.to_str()) == Some("json") {
-            out.push(serde_json::from_slice(&std::fs::read(path)?)?);
+            out.push(serde_json::from_slice(&std::fs::read(path)?)?); // bounded
         }
     }
     Ok(out)

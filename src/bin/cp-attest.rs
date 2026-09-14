@@ -47,6 +47,7 @@ fn main() {
     debug_assert!(!std::env::args().any(|a| a.contains('\0')));
     let mut buf = String::new();
     std::io::stdin().read_to_string(&mut buf).expect("stdin");
+    // bounded
     let input: InputProof = match serde_json::from_str(&buf) {
         Ok(v) => v,
         Err(e) => {

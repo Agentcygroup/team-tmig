@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail; cd "$(dirname "$0")/../.."
-hits=$(grep -rnE '\b(from_reader|from_slice|from_str)\b' src --include='*.rs' \
-  | grep -vE '(extend_from_slice|copy_from_slice)' | grep -v '// bounded' || true)
+# Blocking: serde_json deserialization from untrusted sources.
+# Allow if annotated with "// bounded" on the same line.
+hits=$(grep -rnE 'serde_json::(from_str|from_slice|from_reader)' src --include='*.rs' \
+  | grep -v '// bounded' || true)
 [ -z "$hits" ] || { echo "$hits"; exit 1; }

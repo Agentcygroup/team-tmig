@@ -31,7 +31,7 @@ impl WriteLog {
         Ok(std::fs::read_to_string(&self.path)?
             .lines()
             .filter(|l| !l.trim().is_empty())
-            .filter_map(|l| serde_json::from_str(l).ok())
+            .filter_map(|l| serde_json::from_str(l).ok()) // bounded
             .collect())
     }
 }

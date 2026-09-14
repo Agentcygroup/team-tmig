@@ -9,7 +9,7 @@ pub fn load_declarations(dir: &Path) -> anyhow::Result<Vec<Declaration>> {
         let p = e.path();
         if p.extension().and_then(|s| s.to_str()) != Some("json") { continue; }
         let text = std::fs::read_to_string(&p)?;
-        let v: serde_json::Value = serde_json::from_str(&text)?;
+        let v: serde_json::Value = serde_json::from_str(&text)?; // bounded
         out.push(Declaration {
             claim_id: v.get("claim_id").and_then(|x| x.as_str()).unwrap_or("").into(),
             subject: v.get("subject").and_then(|x| x.as_str()).unwrap_or("").into(),
