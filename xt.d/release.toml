@@ -1,0 +1,8 @@
+[layers.release]
+strength = 100
+
+[[layers.release.target]]
+id = "deny"
+kind = "shell"
+cmd = "cargo deny check advisories bans licenses sources"
+optional = true

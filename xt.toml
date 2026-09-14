@@ -1,0 +1,31 @@
+[meta]
+languages = ["rust"]
+
+[layers.project]
+strength = 40
+
+[[layers.project.target]]
+id = "checks"
+kind = "checks"
+dir = "checks"
+
+[[layers.project.target]]
+id = "gloss"
+kind = "gloss"
+file = "declarations/ai-glossary.gloss"
+schema = "gloss"
+
+[[layers.project.target]]
+id = "receipt"
+kind = "receipt"
+path = "receipts/latest.json"
+
+[[layers.project.target]]
+id = "ci"
+kind = "composite"
+needs = ["fmt", "lint", "test", "doc", "checks", "gloss"]
+
+[[layers.project.target]]
+id = "release"
+kind = "composite"
+needs = ["ci", "receipt"]

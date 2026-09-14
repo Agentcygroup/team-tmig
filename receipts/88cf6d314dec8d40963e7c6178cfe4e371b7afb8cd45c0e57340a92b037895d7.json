@@ -1,0 +1,61 @@
+{
+  "run_id": "88cf6d314dec8d40963e7c6178cfe4e371b7afb8cd45c0e57340a92b037895d7",
+  "repo": "/Users/metadusa/team-tmig",
+  "targets": [
+    {
+      "id": "fmt",
+      "status": "cached",
+      "input_id": "7e2e096245167953cdafffed8930a562199752a3400150574f3498d42277a4a7",
+      "output_id": "32f15df316fe524a0109255136d9366540ed044cc57e4cf2b13f6a277155f35c"
+    },
+    {
+      "id": "lint",
+      "status": "cached",
+      "input_id": "de32ca4cf2f4a71f5394a980b9f4a00052f19e5c4ddd0d014e28d5cd7ca811a3",
+      "output_id": "1464a26277f9ebb1088a514fb2dd0dcd2799c48c4e0b0dd388b6c8c2d5324bbf"
+    },
+    {
+      "id": "build",
+      "status": "cached",
+      "input_id": "12af06f9c33b955f3c04caf22029c04389a12eab91e3c81c9eff866facac76f8",
+      "output_id": "a91f7fa3094212a1aa942765f1e0fbffa60aaae6dcec33de24b5c2feabbbc7c1"
+    },
+    {
+      "id": "test",
+      "status": "cached",
+      "input_id": "d4a1b2e59bea4c30942ad2841e7c726c9ebe68bcc6f5230ff992a16f19ef02c9",
+      "output_id": "b211e0564cd7b95e832fa8efd6a1e86e199d26d81942340da7cf4317fd27a0c3"
+    },
+    {
+      "id": "doc",
+      "status": "cached",
+      "input_id": "2a2a93e36da4b982959e45355a9129828719ac237834187543b056be8543da34",
+      "output_id": "0775894b45a1c925a9f16a6fed1a90fd55f73dfe6eb154e315cca15c98ac9d32"
+    },
+    {
+      "id": "checks",
+      "status": "ok",
+      "input_id": "0ffb55ea4e1fb277b74a79450d94d4f5b5ad869469da5d2fe7415f93aeb98a77",
+      "output_id": "f6957e8f48f04b8f5905281191150d34a5e798d11650aeb5466c7c3a1d13ce5b"
+    },
+    {
+      "id": "gloss",
+      "status": "ok",
+      "input_id": "8ee12a350e8d9ac98cb6a97d13753de58c50dd328c5fdac4bde26e19e180dba5",
+      "output_id": "edd4afc3231dc028d96cdfacd489474ae1f14043a7b48395ef358e2c86c2e38a"
+    },
+    {
+      "id": "ci",
+      "status": "ok",
+      "input_id": "44c505183cbfa726bc712986468e70ecd9d3eb5c0f16f84da1decbcf5139c399",
+      "output_id": "1f043107367a9fba295be32d04dc240338662e6bf03e60ab3ff29c009390a5b0"
+    }
+  ],
+  "non_claims": [
+    "no-mastery",
+    "no-accreditation",
+    "no-coherence-proof",
+    "no-completeness"
+  ],
+  "ts": 1789404791
+}

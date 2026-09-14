@@ -48,6 +48,7 @@ fn main() {
     let mut buf = String::new();
     std::io::stdin().read_to_string(&mut buf).expect("stdin");
     // bounded
+    // bounded
     let input: InputProof = match serde_json::from_str(&buf) {
         Ok(v) => v,
         Err(e) => {

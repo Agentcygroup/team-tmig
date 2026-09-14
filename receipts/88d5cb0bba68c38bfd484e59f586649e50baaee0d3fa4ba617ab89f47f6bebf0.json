@@ -1,0 +1,49 @@
+{
+  "run_id": "88d5cb0bba68c38bfd484e59f586649e50baaee0d3fa4ba617ab89f47f6bebf0",
+  "repo": "/Users/metadusa/team-tmig",
+  "targets": [
+    {
+      "id": "fmt",
+      "status": "ok",
+      "input_id": "ee98b2be2bde719247ff7efb5d9914a977a088ac8736d4775db78f5b76362972",
+      "output_id": "84da3c85318f0e5421a6c65fe5358505c2d7032045ec3a9cffb1c09253785cdc"
+    },
+    {
+      "id": "lint",
+      "status": "ok",
+      "input_id": "ea367142de7f34a7f24ee385d3110ce58f2deeaca2325e5eecb4a463e72d1727",
+      "output_id": "89ab252ecd8c6b310093061f8a429c9d9e51c03ae2d963e10c4184c9accf35ee"
+    },
+    {
+      "id": "build",
+      "status": "ok",
+      "input_id": "24522dcc363cd4b9f0b943503d4a214d922b96d815c572efd60165d5341b0e2d",
+      "output_id": "e1c2e7b3b4e8d954e3ad8a42314e5c7815d5886427c6068f7028b457e6104694"
+    },
+    {
+      "id": "test",
+      "status": "ok",
+      "input_id": "7f74913ca960148508d5aa9f3a517321e536e99d7c1c82733ea26d0a5ab6205c",
+      "output_id": "93afb6b6520ba3d35225b28b46bf3b1a00ccd3aff17a3dc1e7782fe3f4743cae"
+    },
+    {
+      "id": "doc",
+      "status": "ok",
+      "input_id": "298be86eac26738d055e2ffa17426b8ce25b0b7a441636b3792cb907ad692405",
+      "output_id": "0bbbd93fb9a137a4c6e6631e198db914b8288396b66f4450156720e3e3956c2c"
+    },
+    {
+      "id": "checks",
+      "status": "fail",
+      "input_id": "0ffb55ea4e1fb277b74a79450d94d4f5b5ad869469da5d2fe7415f93aeb98a77",
+      "output_id": "f6957e8f48f04b8f5905281191150d34a5e798d11650aeb5466c7c3a1d13ce5b"
+    }
+  ],
+  "non_claims": [
+    "no-mastery",
+    "no-accreditation",
+    "no-coherence-proof",
+    "no-completeness"
+  ],
+  "ts": 1789404111
+}

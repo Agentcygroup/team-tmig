@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail; cd "$(dirname "$0")/../.."
-[ -d data ] || { echo "no data/ dir"; exit 0; }
-find data -name '*.json' -print0 | xargs -0 -n1 -I{} sh -c 'python3 -m json.tool "{}" >/dev/null'
+bad=0
+while IFS= read -r f; do
+  python3 -c "import json,sys;json.load(open(sys.argv[1]))" "$f" 2>/dev/null || { echo "BAD $f"; bad=1; }
+done < <(find declarations tests checks -name '*.json' 2>/dev/null)
+exit "$bad"

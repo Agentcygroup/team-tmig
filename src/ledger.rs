@@ -80,6 +80,7 @@ impl Ledger {
                     continue;
                 }
                 // bounded
+                // bounded
                 if let Ok(e) = serde_json::from_str::<LedgerEntry>(&line) {
                     entries.push(e);
                 }
