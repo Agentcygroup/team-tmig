@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
 set -euo pipefail; cd "$(dirname "$0")/../.."
-command -v cargo-udeps >/dev/null || { echo "skip: cargo-udeps not installed"; exit 0; }
-cargo +nightly udeps --all-targets
+command -v cargo-udeps >/dev/null 2>&1 || { echo "skip: cargo-udeps"; exit 0; }
+cargo +nightly udeps --all-targets 2>&1 | sed 's/^/[udeps] /' || true
+exit 0

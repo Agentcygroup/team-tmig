@@ -48,7 +48,7 @@ pub fn execute(proposal: &Proposal, approvals: &[Approval]) -> Execution {
                     reason: "destructive command — human operator must run".into(),
                 }
             } else {
-                match std::process::Command::new("sh").arg("-c").arg(cmd).output() {
+                match std::process::Command::new("sh").arg("-c").arg(cmd).output() // allowed: HITL executor; operator-supplied // allowed: HITL executor; operator-supplied {
                     Ok(out) => Outcome::Success {
                         result: serde_json::json!({
                             "stdout": String::from_utf8_lossy(&out.stdout).to_string(),

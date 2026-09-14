@@ -60,3 +60,5 @@ pub mod spectral;
 pub mod standards;
 pub mod topology;
 pub mod toroid;
+
+pub mod compose;
