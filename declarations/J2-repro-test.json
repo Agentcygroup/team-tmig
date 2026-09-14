@@ -1,0 +1,7 @@
+{
+  "claim_id": "J2-repro-test",
+  "evidence_hash": "f52e5c4e67f7dc95cf421dc69da13aaadab832c229b748e48f2d3ec924c9bc79",
+  "evidence_path": "Cargo.lock",
+  "subject": "run all lib tests",
+  "ts": "2026-09-12T08:53:33Z"
+}

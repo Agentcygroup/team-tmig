@@ -1,0 +1,7 @@
+{
+  "claim_id": "H3-catalog-tags",
+  "evidence_hash": "4d3a4d8982a490fb9c9389ce12b249a5c1e220e2fca9953efaf24ed1f478d73a",
+  "evidence_path": "catalog/tag-vocabulary.json",
+  "subject": "declare the tag vocabulary",
+  "ts": "2026-09-12T08:53:33Z"
+}

@@ -1,0 +1,19 @@
+class_,authority,url,license,size,scope,dtype,cadence,access,domain,population
+C01,us federal,corpus://c01,public,variable,US,mixed,mixed,api,mixed,300
+C02,us state,corpus://c02,public,variable,US,mixed,mixed,api,mixed,50
+C03,us county,corpus://c03,public,variable,US,mixed,mixed,api,mixed,3143
+C04,us municipal,corpus://c04,public,variable,US,mixed,mixed,api,mixed,30000
+C05,us special district,corpus://c05,public,variable,US,mixed,mixed,api,mixed,50000
+C06,us school district,corpus://c06,public,variable,US,mixed,mixed,api,mixed,13000
+C07,us tribal,corpus://c07,public,variable,US,mixed,mixed,api,mixed,574
+C08,us territory,corpus://c08,public,variable,US,mixed,mixed,api,mixed,5
+C09,international,corpus://c09,public,variable,INTL,mixed,mixed,api,mixed,200
+C10,intergovernmental,corpus://c10,public,variable,INTL,mixed,mixed,api,mixed,50
+C11,standards,corpus://c11,public,variable,INTL,mixed,mixed,api,mixed,40
+C12,research,corpus://c12,public,variable,INTL,mixed,mixed,api,mixed,100000
+C13,ngo,corpus://c13,public,variable,INTL,mixed,mixed,api,mixed,500
+C14,commercial,corpus://c14,public,variable,GLOBAL,mixed,mixed,api,mixed,200
+C15,academic,corpus://c15,public,variable,INTL,mixed,mixed,api,mixed,5000
+C16,hyperlocal,corpus://c16,public,variable,US,mixed,mixed,api,mixed,500000
+C17,indigenous,corpus://c17,public,variable,INTL,mixed,mixed,api,mixed,5000
+C18,diaspora,corpus://c18,public,variable,GLOBAL,mixed,mixed,api,mixed,2000

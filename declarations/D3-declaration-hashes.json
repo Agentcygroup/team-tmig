@@ -1,0 +1,7 @@
+{
+  "claim_id": "D3-declaration-hashes",
+  "evidence_hash": "efa36989eefc6029de2a86663e2281d472efd5b48f1e90985fbd18f5a0a05100",
+  "evidence_path": "tests/cross_layer.rs",
+  "subject": "verify declaration evidence hashes",
+  "ts": "2026-09-12T08:53:33Z"
+}

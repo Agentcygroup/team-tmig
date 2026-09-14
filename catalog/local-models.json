@@ -1,0 +1,67 @@
+{
+  "schema": "tmig/local-models/v1",
+  "predicate": {
+    "P": "runs on Apple Silicon via MLX or Ollama; no NGC, no CUDA, no TensorRT, no AI Enterprise license; HTTP/OpenAI-compatible or CLI",
+    "S": "developer tooling: text/text, code/code, commands/results at the substrate level"
+  },
+  "layers": {
+    "runtime": [
+      "mlx-lm",
+      "ollama"
+    ],
+    "embedding": [
+      "nomic-embed-text",
+      "bge-large-en-v1.5"
+    ],
+    "code": [
+      "Qwen2.5-Coder-7B-Instruct",
+      "DeepSeek-Coder-6.7B-Instruct",
+      "CodeLlama-13B-Instruct",
+      "StarCoder2-15B",
+      "CodeGemma-7B"
+    ],
+    "chat": [
+      "Llama-3.1-8B-Instruct",
+      "Llama-3.1-70B-Instruct",
+      "Mistral-7B-Instruct-v0.3",
+      "Mistral-Nemo-12B-Instruct",
+      "Phi-3-mini-4k-Instruct",
+      "Phi-3-medium-4k-Instruct",
+      "Gemma-2-9B-Instruct",
+      "Qwen2.5-14B-Instruct"
+    ],
+    "small": [
+      "Phi-3-mini-4k-Instruct-4bit",
+      "Gemma-2-2B-Instruct-4bit",
+      "Qwen2.5-3B-Instruct-4bit"
+    ],
+    "optional": [
+      "Whisper-Large-v3",
+      "Silero-VAD"
+    ]
+  },
+  "huggingface_ids": {
+    "Qwen2.5-Coder-7B-Instruct": "mlx-community/Qwen2.5-Coder-7B-Instruct-4bit",
+    "Llama-3.1-8B-Instruct": "mlx-community/Meta-Llama-3.1-8B-Instruct-4bit",
+    "Llama-3.1-70B-Instruct": "mlx-community/Meta-Llama-3.1-70B-Instruct-4bit",
+    "Mistral-7B-Instruct-v0.3": "mlx-community/Mistral-7B-Instruct-v0.3-4bit",
+    "Mistral-Nemo-12B-Instruct": "mlx-community/Mistral-Nemo-Instruct-2407-4bit",
+    "Phi-3-mini-4k-Instruct": "mlx-community/Phi-3-mini-4k-instruct-4bit",
+    "Phi-3-medium-4k-Instruct": "mlx-community/Phi-3-medium-4k-instruct-4bit",
+    "Gemma-2-9B-Instruct": "mlx-community/gemma-2-9b-it-4bit",
+    "Qwen2.5-14B-Instruct": "mlx-community/Qwen2.5-14B-Instruct-4bit",
+    "nomic-embed-text": "nomic-ai/nomic-embed-text-v1.5",
+    "bge-large-en-v1.5": "BAAI/bge-large-en-v1.5",
+    "Whisper-Large-v3": "mlx-community/whisper-large-v3-mlx",
+    "Silero-VAD": "onnx-community/silero-vad"
+  },
+  "rejected_count": 811,
+  "kept_count": 20,
+  "note": "20 of 831 NGC entries survive P\u2229S. The 811 rejections fail P (CUDA/TensorRT/NGC/AI Enterprise) or S (not developer tooling).",
+  "readable_by": [
+    "Architect",
+    "Operator",
+    "Auditor",
+    "Plane"
+  ]
+}

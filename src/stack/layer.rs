@@ -1,0 +1,3 @@
+#[derive(Clone, Copy, Debug, PartialEq, Eq, Hash)]
+pub enum StackLayer { Silicon, Firmware, Kernel, Runtime, Framework, Library, Application, Service, Protocol, Dev, Sec, Ops, Sre, Platform, Data, Ml, Ai, Governance, Compliance, Audit }
+pub const ALL_LAYERS: &[StackLayer] = &[StackLayer::Silicon, StackLayer::Firmware, StackLayer::Kernel, StackLayer::Runtime, StackLayer::Framework, StackLayer::Library, StackLayer::Application, StackLayer::Service, StackLayer::Protocol, StackLayer::Dev, StackLayer::Sec, StackLayer::Ops, StackLayer::Sre, StackLayer::Platform, StackLayer::Data, StackLayer::Ml, StackLayer::Ai, StackLayer::Governance, StackLayer::Compliance, StackLayer::Audit];

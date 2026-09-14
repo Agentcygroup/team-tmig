@@ -1,0 +1,449 @@
+{
+  "schema": "tmig/combinatorial-expansion/v1",
+  "generated_at": "20260912T082526Z",
+  "vocabularies": {
+    "tags": {
+      "size": 36,
+      "elements": [
+        "struct:type",
+        "struct:op",
+        "struct:inv",
+        "struct:prop",
+        "behav:type",
+        "behav:op",
+        "behav:inv",
+        "behav:prop",
+        "state:type",
+        "state:op",
+        "state:inv",
+        "state:prop",
+        "comm:type",
+        "comm:op",
+        "comm:inv",
+        "comm:prop",
+        "correct:type",
+        "correct:op",
+        "correct:inv",
+        "correct:prop",
+        "perf:type",
+        "perf:op",
+        "perf:inv",
+        "perf:prop",
+        "sec:type",
+        "sec:op",
+        "sec:inv",
+        "sec:prop",
+        "evolve:type",
+        "evolve:op",
+        "evolve:inv",
+        "evolve:prop",
+        "meaning:type",
+        "meaning:op",
+        "meaning:inv",
+        "meaning:prop"
+      ]
+    },
+    "primitives": {
+      "size": 6,
+      "elements": [
+        "Declaration",
+        "Consent",
+        "Retention",
+        "Disclosure",
+        "Provenance",
+        "Revocation"
+      ]
+    },
+    "metrics": {
+      "size": 54,
+      "elements": [
+        "struct:count",
+        "struct:rate",
+        "struct:ratio",
+        "struct:dist",
+        "struct:duration",
+        "struct:cost",
+        "behav:count",
+        "behav:rate",
+        "behav:ratio",
+        "behav:dist",
+        "behav:duration",
+        "behav:cost",
+        "state:count",
+        "state:rate",
+        "state:ratio",
+        "state:dist",
+        "state:duration",
+        "state:cost",
+        "comm:count",
+        "comm:rate",
+        "comm:ratio",
+        "comm:dist",
+        "comm:duration",
+        "comm:cost",
+        "correct:count",
+        "correct:rate",
+        "correct:ratio",
+        "correct:dist",
+        "correct:duration",
+        "correct:cost",
+        "perf:count",
+        "perf:rate",
+        "perf:ratio",
+        "perf:dist",
+        "perf:duration",
+        "perf:cost",
+        "sec:count",
+        "sec:rate",
+        "sec:ratio",
+        "sec:dist",
+        "sec:duration",
+        "sec:cost",
+        "evolve:count",
+        "evolve:rate",
+        "evolve:ratio",
+        "evolve:dist",
+        "evolve:duration",
+        "evolve:cost",
+        "meaning:count",
+        "meaning:rate",
+        "meaning:ratio",
+        "meaning:dist",
+        "meaning:duration",
+        "meaning:cost"
+      ]
+    },
+    "layers": {
+      "size": 7,
+      "elements": [
+        "Substrate",
+        "Ledger",
+        "Primitives",
+        "Plane",
+        "Skills",
+        "Catalog",
+        "Doctrine"
+      ]
+    }
+  },
+  "syntactic_product": 81648,
+  "meaningful_composites": 45,
+  "composites": [
+    {
+      "tag": "struct:type",
+      "primitive": "Declaration",
+      "metric": "struct:count",
+      "layer": "Catalog",
+      "name": "cataloged-type"
+    },
+    {
+      "tag": "struct:op",
+      "primitive": "Provenance",
+      "metric": "struct:ratio",
+      "layer": "Ledger",
+      "name": "content-addr-op"
+    },
+    {
+      "tag": "struct:inv",
+      "primitive": "Declaration",
+      "metric": "struct:ratio",
+      "layer": "Plane",
+      "name": "declared-struct-inv"
+    },
+    {
+      "tag": "struct:prop",
+      "primitive": "Provenance",
+      "metric": "struct:dist",
+      "layer": "Ledger",
+      "name": "provenanced-prop"
+    },
+    {
+      "tag": "struct:inv",
+      "primitive": "Retention",
+      "metric": "struct:cost",
+      "layer": "Ledger",
+      "name": "complexity-with-ttl"
+    },
+    {
+      "tag": "behav:type",
+      "primitive": "Consent",
+      "metric": "behav:count",
+      "layer": "Ledger",
+      "name": "approved-behav-type"
+    },
+    {
+      "tag": "behav:op",
+      "primitive": "Revocation",
+      "metric": "behav:rate",
+      "layer": "Ledger",
+      "name": "revocable-op"
+    },
+    {
+      "tag": "behav:inv",
+      "primitive": "Declaration",
+      "metric": "behav:ratio",
+      "layer": "Plane",
+      "name": "declared-behav-inv"
+    },
+    {
+      "tag": "behav:prop",
+      "primitive": "Consent",
+      "metric": "behav:duration",
+      "layer": "Ledger",
+      "name": "approved-behav-prop"
+    },
+    {
+      "tag": "behav:prop",
+      "primitive": "Provenance",
+      "metric": "behav:dist",
+      "layer": "Ledger",
+      "name": "behav-dist-provenance"
+    },
+    {
+      "tag": "state:type",
+      "primitive": "Retention",
+      "metric": "state:duration",
+      "layer": "Ledger",
+      "name": "retained-state-type"
+    },
+    {
+      "tag": "state:op",
+      "primitive": "Disclosure",
+      "metric": "state:count",
+      "layer": "Ledger",
+      "name": "disclosed-mutation"
+    },
+    {
+      "tag": "state:inv",
+      "primitive": "Revocation",
+      "metric": "state:ratio",
+      "layer": "Ledger",
+      "name": "revocable-state-inv"
+    },
+    {
+      "tag": "state:prop",
+      "primitive": "Retention",
+      "metric": "state:cost",
+      "layer": "Ledger",
+      "name": "state-prop-retention"
+    },
+    {
+      "tag": "state:op",
+      "primitive": "Provenance",
+      "metric": "state:rate",
+      "layer": "Ledger",
+      "name": "provenanced-write"
+    },
+    {
+      "tag": "comm:op",
+      "primitive": "Disclosure",
+      "metric": "comm:ratio",
+      "layer": "Ledger",
+      "name": "disclosed-transmit"
+    },
+    {
+      "tag": "comm:inv",
+      "primitive": "Revocation",
+      "metric": "comm:rate",
+      "layer": "Ledger",
+      "name": "revocable-ordering"
+    },
+    {
+      "tag": "comm:op",
+      "primitive": "Provenance",
+      "metric": "comm:duration",
+      "layer": "Ledger",
+      "name": "provenanced-rtt"
+    },
+    {
+      "tag": "comm:op",
+      "primitive": "Consent",
+      "metric": "comm:count",
+      "layer": "Ledger",
+      "name": "approved-message"
+    },
+    {
+      "tag": "comm:inv",
+      "primitive": "Declaration",
+      "metric": "comm:ratio",
+      "layer": "Plane",
+      "name": "declared-comm-inv"
+    },
+    {
+      "tag": "correct:type",
+      "primitive": "Declaration",
+      "metric": "correct:count",
+      "layer": "Catalog",
+      "name": "declared-test"
+    },
+    {
+      "tag": "correct:op",
+      "primitive": "Provenance",
+      "metric": "correct:ratio",
+      "layer": "Ledger",
+      "name": "verified-correction"
+    },
+    {
+      "tag": "correct:inv",
+      "primitive": "Consent",
+      "metric": "correct:ratio",
+      "layer": "Plane",
+      "name": "approved-correct-inv"
+    },
+    {
+      "tag": "correct:prop",
+      "primitive": "Consent",
+      "metric": "correct:duration",
+      "layer": "Ledger",
+      "name": "approved-correct-prop"
+    },
+    {
+      "tag": "correct:cost",
+      "primitive": "Retention",
+      "metric": "correct:cost",
+      "layer": "Ledger",
+      "name": "remediation-with-ttl"
+    },
+    {
+      "tag": "perf:type",
+      "primitive": "Declaration",
+      "metric": "perf:ratio",
+      "layer": "Catalog",
+      "name": "declared-perf-target"
+    },
+    {
+      "tag": "perf:op",
+      "primitive": "Revocation",
+      "metric": "perf:rate",
+      "layer": "Ledger",
+      "name": "revocable-optimization"
+    },
+    {
+      "tag": "perf:inv",
+      "primitive": "Declaration",
+      "metric": "perf:ratio",
+      "layer": "Plane",
+      "name": "declared-perf-inv"
+    },
+    {
+      "tag": "perf:prop",
+      "primitive": "Disclosure",
+      "metric": "perf:dist",
+      "layer": "Ledger",
+      "name": "disclosed-perf-dist"
+    },
+    {
+      "tag": "perf:cost",
+      "primitive": "Retention",
+      "metric": "perf:cost",
+      "layer": "Ledger",
+      "name": "cost-with-retention"
+    },
+    {
+      "tag": "sec:type",
+      "primitive": "Declaration",
+      "metric": "sec:count",
+      "layer": "Catalog",
+      "name": "declared-principal"
+    },
+    {
+      "tag": "sec:op",
+      "primitive": "Consent",
+      "metric": "sec:ratio",
+      "layer": "Ledger",
+      "name": "approved-sec-op"
+    },
+    {
+      "tag": "sec:inv",
+      "primitive": "Declaration",
+      "metric": "sec:ratio",
+      "layer": "Plane",
+      "name": "declared-sec-inv"
+    },
+    {
+      "tag": "sec:prop",
+      "primitive": "Disclosure",
+      "metric": "sec:dist",
+      "layer": "Ledger",
+      "name": "disclosed-exposure"
+    },
+    {
+      "tag": "sec:duration",
+      "primitive": "Retention",
+      "metric": "sec:duration",
+      "layer": "Ledger",
+      "name": "ttp-with-ttl"
+    },
+    {
+      "tag": "evolve:type",
+      "primitive": "Declaration",
+      "metric": "evolve:count",
+      "layer": "Catalog",
+      "name": "declared-version"
+    },
+    {
+      "tag": "evolve:op",
+      "primitive": "Revocation",
+      "metric": "evolve:rate",
+      "layer": "Ledger",
+      "name": "revocable-change"
+    },
+    {
+      "tag": "evolve:inv",
+      "primitive": "Declaration",
+      "metric": "evolve:ratio",
+      "layer": "Plane",
+      "name": "declared-compat-inv"
+    },
+    {
+      "tag": "evolve:prop",
+      "primitive": "Provenance",
+      "metric": "evolve:dist",
+      "layer": "Ledger",
+      "name": "churn-with-provenance"
+    },
+    {
+      "tag": "evolve:cost",
+      "primitive": "Retention",
+      "metric": "evolve:cost",
+      "layer": "Ledger",
+      "name": "migration-with-ttl"
+    },
+    {
+      "tag": "meaning:type",
+      "primitive": "Declaration",
+      "metric": "meaning:count",
+      "layer": "Catalog",
+      "name": "declared-symbol"
+    },
+    {
+      "tag": "meaning:op",
+      "primitive": "Provenance",
+      "metric": "meaning:ratio",
+      "layer": "Ledger",
+      "name": "parse-with-provenance"
+    },
+    {
+      "tag": "meaning:inv",
+      "primitive": "Declaration",
+      "metric": "meaning:ratio",
+      "layer": "Plane",
+      "name": "declared-type-safety"
+    },
+    {
+      "tag": "meaning:prop",
+      "primitive": "Retention",
+      "metric": "meaning:duration",
+      "layer": "Ledger",
+      "name": "meaning-with-ttl"
+    },
+    {
+      "tag": "meaning:prop",
+      "primitive": "Disclosure",
+      "metric": "meaning:dist",
+      "layer": "Ledger",
+      "name": "disclosed-ambiguity"
+    }
+  ],
+  "note": "45 of 898,128 syntactic cells are meaningful. The rest are noise: incoherent domain pairings, primitives that do not attach to the domain, layer violations, or duplicates."
+}

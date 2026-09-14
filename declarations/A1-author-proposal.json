@@ -1,0 +1,7 @@
+{
+  "claim_id": "A1-author-proposal",
+  "evidence_hash": "42fe61befe6b619823e074b3b13513cdd0a9e97bad77d32a16d6afba36c8783e",
+  "evidence_path": "src/bin/hitl.rs",
+  "subject": "propose an action with consequence class",
+  "ts": "2026-09-12T08:53:02Z"
+}

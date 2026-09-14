@@ -1,0 +1,7 @@
+{
+  "claim_id": "G3-provenance-verify",
+  "evidence_hash": "221718fb370182277f00b669b46e75bde109cb9d01894d9a5657db61e5fe173b",
+  "evidence_path": "build.rs",
+  "subject": "re-hash source and compare to slsa.json",
+  "ts": "2026-09-12T08:53:33Z"
+}

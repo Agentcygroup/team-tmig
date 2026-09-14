@@ -1,0 +1,136 @@
+{
+  "schema": "tmig/standards-scope/v1",
+  "predicate": {
+    "P": "conformance is content-addressable and auditable",
+    "S": "bears on developer tooling at the substrate level"
+  },
+  "conformance_by_implementation": [
+    {
+      "id": "RFC8259",
+      "body": "IETF",
+      "title": "JSON",
+      "evidence": "one object per line in hitl.jsonl"
+    },
+    {
+      "id": "RFC8032",
+      "body": "IETF",
+      "title": "Ed25519",
+      "evidence": "approval signatures"
+    },
+    {
+      "id": "RFC6920",
+      "body": "IETF",
+      "title": "ni: URI hash references",
+      "evidence": "content-addressed ledger events"
+    },
+    {
+      "id": "RFC9110",
+      "body": "IETF",
+      "title": "HTTP semantics",
+      "evidence": "cp-attest ok/fail convention, exit codes 0/3"
+    }
+  ],
+  "self_attestation": [
+    {
+      "id": "NIST-AI-RMF-1.0",
+      "body": "NIST",
+      "evidence": "P/S as Govern/Map, ledger as Measure, rejection as Manage"
+    },
+    {
+      "id": "NIST-SP-800-218",
+      "body": "NIST",
+      "title": "SSDF",
+      "evidence": "cargo build/test release process"
+    }
+  ],
+  "not_claimed": [
+    {
+      "id": "ISO/IEC-27001",
+      "reason": "requires external audit and ISMS"
+    },
+    {
+      "id": "ISO/IEC-42001",
+      "reason": "requires external audit"
+    },
+    {
+      "id": "ISO/IEC-23894",
+      "reason": "overlaps 27001, not separately claimed"
+    },
+    {
+      "id": "IEEE-7000",
+      "reason": "conceptual framework, no certification"
+    },
+    {
+      "id": "W3C-VC",
+      "reason": "no credential issuance"
+    },
+    {
+      "id": "W3C-DID",
+      "reason": "no DID method registration"
+    },
+    {
+      "id": "SLSA",
+      "reason": "not currently a producer or consumer"
+    },
+    {
+      "id": "C2PA",
+      "reason": "no provenance attestation of media"
+    }
+  ],
+  "out_of_scope_by_model_scope": [
+    "HL7",
+    "FHIR",
+    "PCI-DSS-Council",
+    "SMPTE",
+    "IEC-TC-65",
+    "ISO-26262",
+    "IEC-62304"
+  ],
+  "adjacent_conditionally_relevant": [
+    {
+      "id": "W3C-VC-2.0",
+      "condition": "if TMIG ever issues human-in-the-loop credentials"
+    },
+    {
+      "id": "W3C-DID-Core",
+      "condition": "if TMIG registers a DID method"
+    },
+    {
+      "id": "OpenID4VC",
+      "condition": "if TMIG consumes an SSI wallet"
+    },
+    {
+      "id": "DIF",
+      "condition": "if TMIG adopts a DIF spec beyond DID Core"
+    },
+    {
+      "id": "OpenSSF",
+      "condition": "if TMIG joins as a project"
+    },
+    {
+      "id": "SLSA",
+      "condition": "if TMIG produces or consumes SLSA provenance"
+    },
+    {
+      "id": "C2PA",
+      "condition": "if TMIG attests media provenance"
+    },
+    {
+      "id": "ISO/IEC-27017",
+      "condition": "if TMIG ships as a cloud service"
+    }
+  ],
+  "counts": {
+    "conformance_by_implementation": 4,
+    "self_attestation": 2,
+    "not_claimed": 8,
+    "out_of_scope": 7,
+    "adjacent": 8
+  },
+  "readable_by": [
+    "Architect",
+    "Operator",
+    "Auditor",
+    "Plane"
+  ]
+}

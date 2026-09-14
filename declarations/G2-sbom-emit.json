@@ -1,0 +1,7 @@
+{
+  "claim_id": "G2-sbom-emit",
+  "evidence_hash": "2122fa8ef6b9d4ef1a832174a1ceac2abde5f7cb172619ad517d6aedf9baa4a8",
+  "evidence_path": "target/provenance/sbom.json",
+  "subject": "emit a CycloneDX SBOM",
+  "ts": "2026-09-12T08:53:33Z"
+}

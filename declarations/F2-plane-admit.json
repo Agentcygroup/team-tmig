@@ -1,0 +1,7 @@
+{
+  "claim_id": "F2-plane-admit",
+  "evidence_hash": "0edbe01d76936bea40e6bbbd5fd447df37bbc880e2661304fe02cf52117ba136",
+  "evidence_path": "src/bin/cp-attest.rs",
+  "subject": "admit or reject an action proof",
+  "ts": "2026-09-12T08:53:33Z"
+}

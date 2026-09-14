@@ -1,0 +1,466 @@
+{
+  "schema": "tmig/tag-vocabulary/v1",
+  "generated_at": "20260912T082204Z",
+  "predicate": {
+    "P": "tag is content-addressable as a Declaration",
+    "S": "tag bears on developer tooling at the substrate level"
+  },
+  "counts": {
+    "generative": 36,
+    "in_scope_generative": 34,
+    "canonical": 11,
+    "surface_variants": 89,
+    "out_of_scope": 14
+  },
+  "generative_tags": [
+    {
+      "tag": "struct:type",
+      "concern": "Structure",
+      "mode": "Type",
+      "in_scope": true
+    },
+    {
+      "tag": "struct:op",
+      "concern": "Structure",
+      "mode": "Operation",
+      "in_scope": true
+    },
+    {
+      "tag": "struct:inv",
+      "concern": "Structure",
+      "mode": "Invariant",
+      "in_scope": true
+    },
+    {
+      "tag": "struct:prop",
+      "concern": "Structure",
+      "mode": "Property",
+      "in_scope": true
+    },
+    {
+      "tag": "behav:type",
+      "concern": "Behavior",
+      "mode": "Type",
+      "in_scope": true
+    },
+    {
+      "tag": "behav:op",
+      "concern": "Behavior",
+      "mode": "Operation",
+      "in_scope": true
+    },
+    {
+      "tag": "behav:inv",
+      "concern": "Behavior",
+      "mode": "Invariant",
+      "in_scope": true
+    },
+    {
+      "tag": "behav:prop",
+      "concern": "Behavior",
+      "mode": "Property",
+      "in_scope": true
+    },
+    {
+      "tag": "state:type",
+      "concern": "State",
+      "mode": "Type",
+      "in_scope": true
+    },
+    {
+      "tag": "state:op",
+      "concern": "State",
+      "mode": "Operation",
+      "in_scope": true
+    },
+    {
+      "tag": "state:inv",
+      "concern": "State",
+      "mode": "Invariant",
+      "in_scope": true
+    },
+    {
+      "tag": "state:prop",
+      "concern": "State",
+      "mode": "Property",
+      "in_scope": true
+    },
+    {
+      "tag": "comm:type",
+      "concern": "Communication",
+      "mode": "Type",
+      "in_scope": false
+    },
+    {
+      "tag": "comm:op",
+      "concern": "Communication",
+      "mode": "Operation",
+      "in_scope": true
+    },
+    {
+      "tag": "comm:inv",
+      "concern": "Communication",
+      "mode": "Invariant",
+      "in_scope": true
+    },
+    {
+      "tag": "comm:prop",
+      "concern": "Communication",
+      "mode": "Property",
+      "in_scope": false
+    },
+    {
+      "tag": "correct:type",
+      "concern": "Correctness",
+      "mode": "Type",
+      "in_scope": true
+    },
+    {
+      "tag": "correct:op",
+      "concern": "Correctness",
+      "mode": "Operation",
+      "in_scope": true
+    },
+    {
+      "tag": "correct:inv",
+      "concern": "Correctness",
+      "mode": "Invariant",
+      "in_scope": true
+    },
+    {
+      "tag": "correct:prop",
+      "concern": "Correctness",
+      "mode": "Property",
+      "in_scope": true
+    },
+    {
+      "tag": "perf:type",
+      "concern": "Performance",
+      "mode": "Type",
+      "in_scope": true
+    },
+    {
+      "tag": "perf:op",
+      "concern": "Performance",
+      "mode": "Operation",
+      "in_scope": true
+    },
+    {
+      "tag": "perf:inv",
+      "concern": "Performance",
+      "mode": "Invariant",
+      "in_scope": true
+    },
+    {
+      "tag": "perf:prop",
+      "concern": "Performance",
+      "mode": "Property",
+      "in_scope": true
+    },
+    {
+      "tag": "sec:type",
+      "concern": "Security",
+      "mode": "Type",
+      "in_scope": true
+    },
+    {
+      "tag": "sec:op",
+      "concern": "Security",
+      "mode": "Operation",
+      "in_scope": true
+    },
+    {
+      "tag": "sec:inv",
+      "concern": "Security",
+      "mode": "Invariant",
+      "in_scope": true
+    },
+    {
+      "tag": "sec:prop",
+      "concern": "Security",
+      "mode": "Property",
+      "in_scope": true
+    },
+    {
+      "tag": "evolve:type",
+      "concern": "Evolution",
+      "mode": "Type",
+      "in_scope": true
+    },
+    {
+      "tag": "evolve:op",
+      "concern": "Evolution",
+      "mode": "Operation",
+      "in_scope": true
+    },
+    {
+      "tag": "evolve:inv",
+      "concern": "Evolution",
+      "mode": "Invariant",
+      "in_scope": true
+    },
+    {
+      "tag": "evolve:prop",
+      "concern": "Evolution",
+      "mode": "Property",
+      "in_scope": true
+    },
+    {
+      "tag": "meaning:type",
+      "concern": "Meaning",
+      "mode": "Type",
+      "in_scope": true
+    },
+    {
+      "tag": "meaning:op",
+      "concern": "Meaning",
+      "mode": "Operation",
+      "in_scope": true
+    },
+    {
+      "tag": "meaning:inv",
+      "concern": "Meaning",
+      "mode": "Invariant",
+      "in_scope": true
+    },
+    {
+      "tag": "meaning:prop",
+      "concern": "Meaning",
+      "mode": "Property",
+      "in_scope": true
+    }
+  ],
+  "canonical_tags": {
+    "feat": [
+      "struct:op",
+      "behav:type",
+      "meaning:op"
+    ],
+    "fix": [
+      "behav:op",
+      "correct:op",
+      "correct:prop"
+    ],
+    "refactor": [
+      "struct:op",
+      "struct:inv",
+      "struct:prop"
+    ],
+    "perf": [
+      "perf:op",
+      "perf:inv",
+      "perf:prop"
+    ],
+    "docs": [
+      "meaning:type",
+      "meaning:op",
+      "meaning:prop"
+    ],
+    "test": [
+      "correct:type",
+      "correct:op",
+      "correct:prop"
+    ],
+    "build": [
+      "evolve:op",
+      "perf:inv",
+      "correct:op"
+    ],
+    "ci": [
+      "evolve:op",
+      "correct:op",
+      "perf:prop"
+    ],
+    "chore": [
+      "state:op",
+      "evolve:op"
+    ],
+    "sec": [
+      "sec:op",
+      "sec:inv",
+      "sec:prop"
+    ],
+    "revert": [
+      "evolve:op",
+      "evolve:inv"
+    ]
+  },
+  "surface_forms": {
+    "feat": [
+      "feat",
+      "feature",
+      "new",
+      "add",
+      "implement",
+      "introduce",
+      "support"
+    ],
+    "fix": [
+      "fix",
+      "bugfix",
+      "hotfix",
+      "bug",
+      "patch",
+      "repair",
+      "correct"
+    ],
+    "refactor": [
+      "refactor",
+      "refact",
+      "restructure",
+      "reorganize",
+      "cleanup",
+      "clean",
+      "simplify",
+      "reduce",
+      "dedup",
+      "deduplicate"
+    ],
+    "perf": [
+      "perf",
+      "performance",
+      "optimize",
+      "optimise",
+      "tune",
+      "speedup",
+      "faster",
+      "cache",
+      "lazy"
+    ],
+    "docs": [
+      "docs",
+      "doc",
+      "documentation",
+      "comment",
+      "readme",
+      "changelog",
+      "manual"
+    ],
+    "test": [
+      "test",
+      "tests",
+      "spec",
+      "specs",
+      "coverage",
+      "assert",
+      "verify",
+      "fixture",
+      "mock"
+    ],
+    "build": [
+      "build",
+      "builds",
+      "compile",
+      "compile-time",
+      "link",
+      "linker",
+      "toolchain",
+      "bootstrap"
+    ],
+    "ci": [
+      "ci",
+      "travis",
+      "circle",
+      "github-actions",
+      "jenkins",
+      "gitlab-ci",
+      "pipeline",
+      "workflow"
+    ],
+    "chore": [
+      "chore",
+      "misc",
+      "housekeeping",
+      "maintenance",
+      "tidy",
+      "whitespace",
+      "typo",
+      "lint",
+      "format",
+      "style"
+    ],
+    "sec": [
+      "sec",
+      "security",
+      "cve",
+      "vuln",
+      "vulnerability",
+      "hardening",
+      "crypto",
+      "auth",
+      "permission"
+    ],
+    "revert": [
+      "revert",
+      "rollback",
+      "undo",
+      "restore",
+      "backout"
+    ]
+  },
+  "out_of_scope": [
+    {
+      "surface": "wip",
+      "reason": "NoTerminalState"
+    },
+    {
+      "surface": "experiment",
+      "reason": "NoTerminalState"
+    },
+    {
+      "surface": "spike",
+      "reason": "NoTerminalState"
+    },
+    {
+      "surface": "poc",
+      "reason": "NoTerminalState"
+    },
+    {
+      "surface": "proto",
+      "reason": "NoTerminalState"
+    },
+    {
+      "surface": "nit",
+      "reason": "NoTerminalState"
+    },
+    {
+      "surface": "release",
+      "reason": "NotSubstrate"
+    },
+    {
+      "surface": "merge",
+      "reason": "NotSubstrate"
+    },
+    {
+      "surface": "cherry-pick",
+      "reason": "NotSubstrate"
+    },
+    {
+      "surface": "squash",
+      "reason": "NotSubstrate"
+    },
+    {
+      "surface": "rebase",
+      "reason": "NotSubstrate"
+    },
+    {
+      "surface": "breaking-change",
+      "reason": "NotSubstrate"
+    },
+    {
+      "surface": "skip-ci",
+      "reason": "NotSubstrate"
+    },
+    {
+      "surface": "style (merge-strategy variant)",
+      "reason": "NotSubstrate"
+    }
+  ],
+  "scope_note": "34 of 36 generative tags are in scope. comm:type and comm:prop fail S: TMIG does not implement the network layer.",
+  "readable_by": [
+    "Architect",
+    "Operator",
+    "Auditor",
+    "Plane"
+  ]
+}

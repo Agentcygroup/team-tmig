@@ -1,0 +1,37 @@
+pub fn all_modes() -> Vec<&'static str> {
+    vec![
+        "propagate",
+        "migrate",
+        "mimic",
+        "linger",
+        "veil",
+        "observe",
+        "seal",
+        "watch",
+        "inject",
+        "swarm",
+        "carry",
+        "drop",
+        "dwell",
+        "wait",
+        "tick",
+        "morph",
+        "rewrite",
+        "obscure",
+        "wrap",
+        "fold",
+        "blur",
+        "pulse",
+        "orchestrate",
+        "siphon",
+        "anchor",
+        "slide",
+        "rise",
+        "scan",
+        "open",
+        "act",
+    ]
+}
+pub fn bound_holds(_mode: &str) -> bool {
+    true
+}

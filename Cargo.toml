@@ -1,0 +1,99 @@
+[package]
+name = "tmig"
+version = "0.1.0"
+edition = "2021"
+default-run = "tmig"
+autobins = false
+
+[lib]
+name = "tmig"
+path = "src/lib.rs"
+
+[[bin]]
+name = "tmig"
+path = "src/main.rs"
+
+[[bin]]
+name = "athletic-swarm"
+path = "src/bin/athletic.rs"
+
+[[bin]]
+name = "murmur"
+path = "src/bin/murmur.rs"
+
+[[bin]]
+name = "jira-swarm"
+path = "src/bin/jira-swarm.rs"
+
+[[bin]]
+name = "filelayer"
+path = "src/bin/filelayer.rs"
+
+[[bin]]
+name = "plane"
+path = "src/bin/plane.rs"
+
+[[bin]]
+name = "model-boundary"
+path = "src/bin/model-boundary.rs"
+
+[[bin]]
+name = "provenance"
+path = "src/bin/provenance.rs"
+
+[dependencies]
+clap = { version = "4", features = ["derive"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+sha2 = "0.10"
+ed25519-dalek = { version = "2", features = ["rand_core"] }
+rand = "0.8"
+regex = "1"
+walkdir = "2"
+chrono = { version = "0.4", features = ["serde"] }
+anyhow = "1"
+thiserror = "1"
+geo = "0.33.1"
+
+[[bin]]
+name = "cp-hash"
+path = "src/bin/cp-hash.rs"
+
+[[bin]]
+name = "cp-attest"
+path = "src/bin/cp-attest.rs"
+
+[[bin]]
+name = "sbom"
+path = "src/bin/sbom.rs"
+
+[build-dependencies]
+sha2 = "0.10"
+
+[dev-dependencies]
+proptest = "1"
+criterion = "0.5"
+
+[[bench]]
+name = "classify"
+harness = false
+
+[[bin]]
+name = "corpus"
+path = "src/bin/corpus.rs"
+
+[[bin]]
+name = "spectral"
+path = "src/bin/spectral.rs"
+
+[[bin]]
+name = "release"
+path = "src/bin/release.rs"
+
+[[bin]]
+name = "omega"
+path = "src/bin/omega.rs"
+
+[[bin]]
+name = "content"
+path = "src/bin/content.rs"

@@ -1,0 +1,9 @@
+#![no_main]
+use libfuzzer_sys::fuzz_target;
+fuzz_target!(|data: &[u8]| {
+    if data.len() >= 8 {
+        let v = u64::from_le_bytes(data[..8].try_into().unwrap());
+        let _ = tmig::boundary::cardinality::classify(Some(v));
+    }
+    let _ = tmig::boundary::cardinality::classify(None);
+});

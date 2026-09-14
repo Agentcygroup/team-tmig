@@ -1,0 +1,7 @@
+{
+  "claim_id": "A5-author-primitive",
+  "evidence_hash": "687daca179e972a0a10bc96095da9a590591d8bfbabfb5769440af25f3d1d58c",
+  "evidence_path": "src/hitl/primitives.rs",
+  "subject": "annotate an event with a primitive",
+  "ts": "2026-09-12T08:53:33Z"
+}

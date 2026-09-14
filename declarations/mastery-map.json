@@ -1,0 +1,7 @@
+{
+  "claim_id": "mastery-map",
+  "evidence_hash": "418936f779f7015cb63c3a682222e8db141c8d1828739e1be6078f2ff1008ed7",
+  "evidence_path": "target/provenance/mastery-map.json",
+  "subject": "specialization over experience, derived from the hitl ledger",
+  "ts": "2026-09-12T08:52:27Z"
+}

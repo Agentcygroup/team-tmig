@@ -1,0 +1,9 @@
+/target/
+**/*.rs.bk
+*.bak
+*.bak.*
+build.err
+test.err
+.DS_Store
+.audit/objects/
+.audit/log/

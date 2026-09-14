@@ -1,0 +1,7 @@
+{
+  "claim_id": "J3-repro-clean-build",
+  "evidence_hash": "f52e5c4e67f7dc95cf421dc69da13aaadab832c229b748e48f2d3ec924c9bc79",
+  "evidence_path": "Cargo.lock",
+  "subject": "rebuild without caches",
+  "ts": "2026-09-12T08:53:33Z"
+}

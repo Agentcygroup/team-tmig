@@ -1,0 +1,7 @@
+{
+  "claim_id": "J1-repro-build",
+  "evidence_hash": "c73cbf1f0069a3cc2214225213cd269c4d0dedb27acf62e8c4e133b271e069b2",
+  "evidence_path": "Cargo.toml",
+  "subject": "rebuild the tree from source",
+  "ts": "2026-09-12T08:53:33Z"
+}

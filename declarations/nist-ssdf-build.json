@@ -1,0 +1,7 @@
+{
+  "claim_id": "nist-ssdf-build",
+  "evidence_hash": "c73cbf1f0069a3cc2214225213cd269c4d0dedb27acf62e8c4e133b271e069b2",
+  "evidence_path": "Cargo.toml",
+  "subject": "reproducible release build",
+  "ts": "2026-09-12T00:00:00Z"
+}

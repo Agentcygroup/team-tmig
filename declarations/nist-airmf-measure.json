@@ -1,0 +1,7 @@
+{
+  "claim_id": "nist-airmf-measure",
+  "evidence_hash": "bb043fd5097f53c1959ebe3afb550e53be43e82975498218172334d269f54aff",
+  "evidence_path": "src/hitl/ledger.rs",
+  "subject": "content-addressed hitl ledger",
+  "ts": "2026-09-12T00:00:00Z"
+}

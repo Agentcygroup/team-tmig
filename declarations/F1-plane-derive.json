@@ -1,0 +1,7 @@
+{
+  "claim_id": "F1-plane-derive",
+  "evidence_hash": "e61cc424c841230a3132b57ee3002cedc282acd6ca0a3eb3406d7d891346b523",
+  "evidence_path": "src/bin/cp-hash.rs",
+  "subject": "derive the control plane hash",
+  "ts": "2026-09-12T08:53:33Z"
+}

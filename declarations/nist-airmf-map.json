@@ -1,0 +1,7 @@
+{
+  "claim_id": "nist-airmf-map",
+  "evidence_hash": "c3155a39508e4c11e004cbc9fc0e42c80c31eabcf6f794d5dfd51e248ccfb9d1",
+  "evidence_path": "docs/DOCTRINE.md",
+  "subject": "control plane scope predicate",
+  "ts": "2026-09-12T00:00:00Z"
+}

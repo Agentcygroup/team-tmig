@@ -1,0 +1,7 @@
+{
+  "claim_id": "H1-catalog-models",
+  "evidence_hash": "3c4adb1d54e124925419048bf155e6a8d597cfb29fba2a1a143040d42ffbbc8d",
+  "evidence_path": "catalog/local-models.json",
+  "subject": "declare the model scope",
+  "ts": "2026-09-12T08:53:33Z"
+}

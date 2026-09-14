@@ -1,0 +1,7 @@
+{
+  "claim_id": "B1-approve-sign",
+  "evidence_hash": "7e3893752dd4f4b88ecb4b8295f744f95863245c2e5a0fc18070536d705e41a7",
+  "evidence_path": "src/hitl/approval.rs",
+  "subject": "sign an approval with ed25519",
+  "ts": "2026-09-12T08:53:33Z"
+}

@@ -1,0 +1,188 @@
+{
+  "model_p": "All model inference runs locally on Apple Silicon through MLX or Ollama. No network calls to model providers. No CUDA. No TensorRT. No NGC account. No AI Enterprise license. Models expose an OpenAI-compatible HTTP interface or an MLX-native interface for pi.",
+  "model_s": "Developer tooling: text in, text out; code in, code out; commands in, results out. Files, commits, tickets, commands, reviews, tests, docs, and runbooks are in scope. Vision, audio, medical imaging, weather, protein folding, and codecs are out of substrate scope unless downstream of a developer action.",
+  "source_catalog_estimate": 831,
+  "survivor_count": 20,
+  "survivors": [
+    {
+      "local_id": "mlx-community/Meta-Llama-3.1-8B-Instruct-4bit",
+      "name": "Llama 3.1 8B Instruct",
+      "purpose": "general local developer assistant",
+      "runtime": "MlxLm",
+      "satisfies_p": true,
+      "satisfies_s": true,
+      "status": "Survives"
+    },
+    {
+      "local_id": "mlx-community/Meta-Llama-3.1-70B-Instruct-4bit",
+      "name": "Llama 3.1 70B Instruct",
+      "purpose": "large local reasoning assistant",
+      "runtime": "MlxLm",
+      "satisfies_p": true,
+      "satisfies_s": true,
+      "status": "Survives"
+    },
+    {
+      "local_id": "llama3:8b",
+      "name": "Meta Llama 3 8B Instruct",
+      "purpose": "installed Ollama baseline",
+      "runtime": "Ollama",
+      "satisfies_p": true,
+      "satisfies_s": true,
+      "status": "Survives"
+    },
+    {
+      "local_id": "llama3.3:70b",
+      "name": "Meta Llama 3 70B Instruct",
+      "purpose": "installed Ollama large baseline",
+      "runtime": "Ollama",
+      "satisfies_p": true,
+      "satisfies_s": true,
+      "status": "Survives"
+    },
+    {
+      "local_id": "mlx-community/Mistral-7B-Instruct-v0.3-4bit",
+      "name": "Mistral-7B-Instruct",
+      "purpose": "small fast tool-use",
+      "runtime": "MlxLm",
+      "satisfies_p": true,
+      "satisfies_s": true,
+      "status": "Survives"
+    },
+    {
+      "local_id": "mlx-community/Mistral-Nemo-Instruct-2407-4bit",
+      "name": "Mistral-Nemo-12B Instruct",
+      "purpose": "mid-size local assistant",
+      "runtime": "MlxLm",
+      "satisfies_p": true,
+      "satisfies_s": true,
+      "status": "Survives"
+    },
+    {
+      "local_id": "mlx-community/Qwen2.5-Coder-7B-Instruct-4bit",
+      "name": "Qwen2.5-Coder-7B Instruct",
+      "purpose": "primary code model",
+      "runtime": "MlxLm",
+      "satisfies_p": true,
+      "satisfies_s": true,
+      "status": "Primary"
+    },
+    {
+      "local_id": "mlx-community/CodeLlama-13b-Instruct-hf-4bit",
+      "name": "Code Llama 13B",
+      "purpose": "legacy code model",
+      "runtime": "MlxLm",
+      "satisfies_p": true,
+      "satisfies_s": true,
+      "status": "Survives"
+    },
+    {
+      "local_id": "mlx-community/codegemma-2b-4bit",
+      "name": "CodeGemma 2B",
+      "purpose": "tiny code completion",
+      "runtime": "MlxLm",
+      "satisfies_p": true,
+      "satisfies_s": true,
+      "status": "Survives"
+    },
+    {
+      "local_id": "mlx-community/codegemma-7b-it-4bit",
+      "name": "CodeGemma 7B",
+      "purpose": "small code chat",
+      "runtime": "MlxLm",
+      "satisfies_p": true,
+      "satisfies_s": true,
+      "status": "Survives"
+    },
+    {
+      "local_id": "mlx-community/starcoder2-15b-4bit",
+      "name": "StarCoder2-15B",
+      "purpose": "code completion",
+      "runtime": "MlxLm",
+      "satisfies_p": true,
+      "satisfies_s": true,
+      "status": "Survives"
+    },
+    {
+      "local_id": "mlx-community/deepseek-coder-6.7b-instruct-4bit",
+      "name": "DeepSeek-Coder-6.7B",
+      "purpose": "strong small code model",
+      "runtime": "MlxLm",
+      "satisfies_p": true,
+      "satisfies_s": true,
+      "status": "Survives"
+    },
+    {
+      "local_id": "mlx-community/deepseek-coder-33b-instruct-4bit",
+      "name": "DeepSeek-Coder-33B",
+      "purpose": "large local code model",
+      "runtime": "MlxLm",
+      "satisfies_p": true,
+      "satisfies_s": true,
+      "status": "Survives"
+    },
+    {
+      "local_id": "mlx-community/Phi-3-mini-4k-instruct-4bit",
+      "name": "Phi-3 Mini 4K Instruct",
+      "purpose": "tiny fast reasoning",
+      "runtime": "MlxLm",
+      "satisfies_p": true,
+      "satisfies_s": true,
+      "status": "Survives"
+    },
+    {
+      "local_id": "mlx-community/Phi-3-mini-128k-instruct-4bit",
+      "name": "Phi-3 Mini 128K Instruct",
+      "purpose": "tiny long-context reasoning",
+      "runtime": "MlxLm",
+      "satisfies_p": true,
+      "satisfies_s": true,
+      "status": "Survives"
+    },
+    {
+      "local_id": "mlx-community/Phi-3-medium-4k-instruct-4bit",
+      "name": "Phi-3 Medium Instruct",
+      "purpose": "mid-size reasoning",
+      "runtime": "MlxLm",
+      "satisfies_p": true,
+      "satisfies_s": true,
+      "status": "Survives"
+    },
+    {
+      "local_id": "mlx-community/gemma-7b-it-4bit",
+      "name": "Gemma 7B Instruct",
+      "purpose": "small general assistant",
+      "runtime": "MlxLm",
+      "satisfies_p": true,
+      "satisfies_s": true,
+      "status": "Survives"
+    },
+    {
+      "local_id": "mlx-community/Nemotron-Mini-4B-Instruct-4bit",
+      "name": "Nemotron-Mini-4B-Instruct",
+      "purpose": "small NVIDIA-derived local instruct model if converted",
+      "runtime": "MlxLm",
+      "satisfies_p": true,
+      "satisfies_s": true,
+      "status": "Survives"
+    },
+    {
+      "local_id": "nomic-embed-text",
+      "name": "nomic-embed-text",
+      "purpose": "repo embeddings/RAG",
+      "runtime": "Ollama",
+      "satisfies_p": true,
+      "satisfies_s": true,
+      "status": "Optional"
+    },
+    {
+      "local_id": "BAAI/bge-large-en-v1.5",
+      "name": "bge-large-en",
+      "purpose": "repo embeddings/RAG",
+      "runtime": "MlxEmbeddings",
+      "satisfies_p": true,
+      "satisfies_s": true,
+      "status": "Optional"
+    }
+  ]
+}

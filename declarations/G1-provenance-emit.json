@@ -1,0 +1,7 @@
+{
+  "claim_id": "G1-provenance-emit",
+  "evidence_hash": "8eee22e7aa86c085f5c5e5f466734869a7eed27c3d06cb9add9de62cb33c65e5",
+  "evidence_path": "target/provenance/slsa.json",
+  "subject": "emit SLSA L1 provenance",
+  "ts": "2026-09-12T08:53:33Z"
+}

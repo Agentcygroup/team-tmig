@@ -1,0 +1,7 @@
+{
+  "claim_id": "C3-refuse-legal",
+  "evidence_hash": "8c84d09c595d38ac961b2253b4bb0aa73c4fff7e7f050e141197664975b83955",
+  "evidence_path": "src/hitl/executor.rs",
+  "subject": "refuse auto-execute for Sign",
+  "ts": "2026-09-12T08:53:33Z"
+}

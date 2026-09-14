@@ -1,0 +1,7 @@
+{
+  "claim_id": "D2-audit-standards",
+  "evidence_hash": "0576f3d038da32e0ed180156fca4d1618e229cfd90fba4ad78a1701c754b7fb4",
+  "evidence_path": "target/standards/audit.txt",
+  "subject": "audit the tree against claimed standards",
+  "ts": "2026-09-12T08:53:33Z"
+}

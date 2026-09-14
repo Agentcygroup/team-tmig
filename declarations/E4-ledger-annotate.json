@@ -1,0 +1,7 @@
+{
+  "claim_id": "E4-ledger-annotate",
+  "evidence_hash": "bb043fd5097f53c1959ebe3afb550e53be43e82975498218172334d269f54aff",
+  "evidence_path": "src/hitl/ledger.rs",
+  "subject": "attach retention/disclosure/provenance",
+  "ts": "2026-09-12T08:53:33Z"
+}

@@ -1,0 +1,73 @@
+authority\scope	GLOBAL	INTL	US
+Academic institutional api	0	1	0
+Academic institutional bulk	0	1	0
+Academic institutional portal	0	1	0
+Academic institutional registry	0	1	0
+Commercial open data api	1	0	0
+Commercial open data bulk	1	0	0
+Commercial open data portal	1	0	0
+Commercial open data registry	1	0	0
+Diaspora / transnational api	1	0	0
+Diaspora / transnational bulk	1	0	0
+Diaspora / transnational portal	1	0	0
+Diaspora / transnational registry	1	0	0
+Hyperlocal neighborhood api	0	0	1
+Hyperlocal neighborhood bulk	0	0	1
+Hyperlocal neighborhood portal	0	0	1
+Hyperlocal neighborhood registry	0	0	1
+Indigenous global api	0	1	0
+Indigenous global bulk	0	1	0
+Indigenous global portal	0	1	0
+Indigenous global registry	0	1	0
+Intergovernmental api	0	1	0
+Intergovernmental bulk	0	1	0
+Intergovernmental portal	0	1	0
+Intergovernmental registry	0	1	0
+International statistical api	0	1	0
+International statistical bulk	0	1	0
+International statistical portal	0	1	0
+International statistical registry	0	1	0
+NGO transparency api	0	1	0
+NGO transparency bulk	0	1	0
+NGO transparency portal	0	1	0
+NGO transparency registry	0	1	0
+Peer-reviewed research api	0	1	0
+Peer-reviewed research bulk	0	1	0
+Peer-reviewed research portal	0	1	0
+Peer-reviewed research registry	0	1	0
+Standards bodies api	0	1	0
+Standards bodies bulk	0	1	0
+Standards bodies portal	0	1	0
+Standards bodies registry	0	1	0
+US county api	0	0	1
+US county bulk	0	0	1
+US county portal	0	0	1
+US county registry	0	0	1
+US federal api	0	0	1
+US federal bulk	0	0	1
+US federal portal	0	0	1
+US federal registry	0	0	1
+US municipal api	0	0	1
+US municipal bulk	0	0	1
+US municipal portal	0	0	1
+US municipal registry	0	0	1
+US school district api	0	0	1
+US school district bulk	0	0	1
+US school district portal	0	0	1
+US school district registry	0	0	1
+US special district api	0	0	1
+US special district bulk	0	0	1
+US special district portal	0	0	1
+US special district registry	0	0	1
+US state api	0	0	1
+US state bulk	0	0	1
+US state portal	0	0	1
+US state registry	0	0	1
+US territory api	0	0	1
+US territory bulk	0	0	1
+US territory portal	0	0	1
+US territory registry	0	0	1
+US tribal api	0	0	1
+US tribal bulk	0	0	1
+US tribal portal	0	0	1
+US tribal registry	0	0	1
