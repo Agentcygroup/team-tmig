@@ -1,2 +1,3 @@
 #!/usr/bin/env bash
-exit 0
+set -euo pipefail; cd "$(dirname "$0")/../.."
+cargo clippy --all-targets --all-features -- -D warnings
