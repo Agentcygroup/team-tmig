@@ -14,3 +14,4 @@ lcov.info
 sbom.cdx.json
 !.gitignore
 !src/bin/xt.rs
+target/
