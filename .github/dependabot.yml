@@ -3,10 +3,12 @@ updates:
   - package-ecosystem: cargo
     directory: /
     schedule: { interval: weekly }
-    open-pull-requests-limit: 5
-    groups:
-      patch: { update-types: [patch] }
-      minor: { update-types: [minor] }
+    open-pull-requests-limit: 10
+    groups: { rust: { patterns: ["*"] } }
   - package-ecosystem: github-actions
     directory: /
     schedule: { interval: weekly }
+  - package-ecosystem: npm
+    directory: /bindings/node
+    schedule: { interval: weekly }
+    open-pull-requests-limit: 5
