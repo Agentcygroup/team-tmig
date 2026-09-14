@@ -1,2 +1,7 @@
 [alias]
 xt = "run --quiet --bin xt --"
+ci = "run --quiet --bin xt -- ci"
+receipt = "run --quiet --bin xt -- receipt"
+
+[build]
+rustflags = ["-D", "warnings"]

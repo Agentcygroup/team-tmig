@@ -101,3 +101,12 @@ path = "src/bin/content.rs"
 [[bin]]
 name = "xt"
 path = "src/bin/xt.rs"
+
+[profile.release]
+lto = "thin"
+codegen-units = 1
+panic = "abort"
+strip = "symbols"
+
+[profile.dev]
+opt-level = 1
