@@ -1,7 +1,27 @@
 {
-  "claim_id": "mastery-map",
-  "evidence_hash": "418936f779f7015cb63c3a682222e8db141c8d1828739e1be6078f2ff1008ed7",
-  "evidence_path": "target/provenance/mastery-map.json",
-  "subject": "specialization over experience, derived from the hitl ledger",
-  "ts": "2026-09-12T08:52:27Z"
+  "commit": "3a4c7d652c7230a663fa5acac3a2c959ca9c98e9",
+  "tag": "none",
+  "receipt_sha256": "062f8d28b1108050ef991dbea097349a43e8944c6e53db2efcd927853334b6c4",
+  "proven": [
+    "cargo fmt --check",
+    "cargo clippy -D warnings",
+    "cargo test --release",
+    "cargo doc -D warnings",
+    "cargo deny check",
+    "checks/mastery/04-self-reference.sh",
+    "checks/mastery/05-boundary-declared.sh",
+    "checks/mastery/06-subarity.sh"
+  ],
+  "asserted": [
+    "SBOM attached to release",
+    "SLSA provenance on tagged builds",
+    "cosign signatures on release artifacts"
+  ],
+  "boundary": [
+    "no HTTP server in tree",
+    "no DB engine in tree",
+    "no untrusted executable content"
+  ],
+  "self_reference": "closed (tests/standards.rs)",
+  "subarity": "no seventh primitive (tests subarity via lib)"
 }

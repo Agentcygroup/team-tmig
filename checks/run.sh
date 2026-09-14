@@ -2,8 +2,8 @@
 # Unified runner for everything under checks/.
 set -euo pipefail
 cd "$(dirname "$0")/.."
-groups=("$@")
-[ "${#groups[@]}" -eq 0 ] && groups=(dev sec red ops hackathon it pentest org infra pipeline compliance data sre ml docs perf chaos)
+groups=(dev sec red ops hackathon it pentest org infra pipeline compliance data sre ml docs perf chaos mastery)
+[ "${#groups[@]}" -eq 0 ] && groups=(dev sec red ops hackathon it pentest org infra pipeline compliance data sre ml docs perf chaos mastery)
 fail=0
 for g in "${groups[@]}"; do
   [ -d "checks/$g" ] || continue

@@ -1,20 +1,12 @@
 # Statement of Applicability
 
-ISO IEC 27001 2022 Annex A
- A
-5
-1 policies applicable
- A
-5
-15 access control documented
- A
-8
-15 logging implemented
- A
-8
-24 crypto implemented
- A
-8
-28 secure coding implemented
- Full catalogue COMPLIANCE_REGISTRIES
-md
+| Control | Status | Evidence |
+|---|---|---|
+| Build reproducibility | applied | Cargo.lock, `pipeline/01-hermetic.sh` |
+| Supply-chain audit | applied | `sec/02-cve.sh`, `sec/12-sbom.sh` |
+| License compliance | applied | `deny.toml`, `cargo deny check` |
+| Boundary declaration | applied | `mastery/05-boundary-declared.sh` |
+| Self-reference closure | applied | `mastery/04-self-reference.sh` |
+| Subarity | applied | `mastery/06-subarity.sh` |
+| Provenance chain | applied | `.audit/log/`, `mastery/02-provenance-chain.sh` |
+| Signed releases | applied | `.github/workflows/release.yml`, cosign |
