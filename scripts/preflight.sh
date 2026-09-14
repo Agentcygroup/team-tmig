@@ -11,7 +11,7 @@ step "fmt";        run cargo fmt --all -- --check
 step "clippy";     run cargo clippy --all-targets --all-features -- -D warnings
 step "test";       run cargo test --release --all-targets
 step "docs";       run cargo doc --no-deps --document-private-items
-step "checks";     [ -x checks/run.sh ] && run checks/run.sh dev sec || true
+step "checks";     [ -x checks/run.sh ] && run bash checks/run.sh dev sec || true
 step "receipt";    run cargo xt receipt
 opt cargo-audit    && { step "audit";    run cargo audit; }                                       || echo "skip cargo-audit"
 opt cargo-deny     && { step "deny";     run cargo deny check advisories bans licenses sources; } || echo "skip cargo-deny"
