@@ -1,7 +1,7 @@
 {
-  "commit": "434b5f1ae8825445e1bc2b6dafb1c2d5eab75376",
+  "commit": "495b3cbdc20cef362a39b28a49b19a0660bb1ad2",
   "tag": "none",
-  "receipt_sha256": "cc01f141f13d643d561dfc24a3236f7bd570eb015d5750767b74badefc22b2cf",
+  "receipt_sha256": "a1565e37e3c3e0261d62cb747d6d596578eaaf0f2f3b6b659c61d90f7640e5d4",
   "proven": [
     "cargo fmt --check",
     "cargo clippy -D warnings",
